@@ -7,7 +7,6 @@ public class Person {
     public void walk(){
         System.out.println("Person "+name+" is walking.");
     }
-
     private void sleep(){
         System.out.println("Person "+name+" is sleeping.");
     }
