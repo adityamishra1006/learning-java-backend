@@ -2,6 +2,7 @@ package org.Aditya;
 
 public class CompositionDemo {
     public static void main(String[] args) {
+
         Laptop l1 = new Laptop();
         System.out.println(l1);
 
@@ -16,5 +17,6 @@ public class CompositionDemo {
 
         Laptop l3 = new Laptop("Dell Model2", os2, k2);
         System.out.println(l3);
+        
     }
 }
