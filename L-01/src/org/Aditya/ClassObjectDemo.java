@@ -6,10 +6,12 @@ public class ClassObjectDemo {
         Lecture l1 = new Lecture("L01", "Aditya", "LIVE");
         System.out.println(l1.title);
 
+
         System.out.println(Lecture.totalObjects);
         Lecture l2 = new Lecture("L02", "Aditya", "UPCOMING");
         System.out.println(l2.title);
 
+        
         System.out.println(Lecture.totalObjects);
 
         Person p1 = new Person();
