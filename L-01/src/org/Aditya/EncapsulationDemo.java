@@ -8,6 +8,7 @@ public class EncapsulationDemo {
         s1.setName("Aditya Mishra");
         s1.batch = "85";
 
+        
 //        System.out.println(s1.getRegNum()+" "+s1.getName());
         System.out.println(s1.toString());
         Student s2 = new Student(2, "Ayush");
