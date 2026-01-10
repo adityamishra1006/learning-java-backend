@@ -4,6 +4,7 @@ import java.security.Key;
 
 public class Laptop {
     private String name;
+
     private OS os;
 
     private Keyboard keyboard;
