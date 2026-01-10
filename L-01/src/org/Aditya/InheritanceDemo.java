@@ -7,6 +7,7 @@ public class InheritanceDemo {
         Student s1 = new Student(123, "Aditya");
 //        System.out.println(s1);
 
+        
         Person p1 = new Person();
         p1.name = "Ayush";
 //        System.out.println();
