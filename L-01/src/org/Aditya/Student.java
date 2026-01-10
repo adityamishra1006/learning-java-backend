@@ -1,5 +1,6 @@
 package org.Aditya;
 
+
 public class Student extends Person {
     private Integer regNum;
 //    private String name;
