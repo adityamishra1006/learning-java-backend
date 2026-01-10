@@ -8,7 +8,6 @@ public class ClassMonitor extends Student {
     }
 
     public void monitorclass(){
-
     }
 
     @Override
