@@ -6,7 +6,6 @@ public class OS {
     public OS(String name) {
         this.name = name;
     }
-
     @Override
     public String toString() {
         return "OS{" +
