@@ -4,8 +4,11 @@ import java.util.List;
 
 public class Lecture {
     String title;
+
     String mentor;
+    
     String status;
+    
     List<String> resources;
 
     static Integer totalObjects = 0;
