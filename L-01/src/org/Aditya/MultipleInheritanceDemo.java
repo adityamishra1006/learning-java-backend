@@ -1,5 +1,6 @@
 package org.Aditya;
 
+
 public class MultipleInheritanceDemo {
     public static void main(String[] args) {
         C c = new C();
