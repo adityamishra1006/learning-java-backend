@@ -6,7 +6,6 @@ public enum Admin {
     private String name;
     private Long empId;
 
-
     Admin(String name, Long empId) {
         this.name = name;
         this.empId = empId;
