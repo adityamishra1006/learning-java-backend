@@ -20,5 +20,4 @@ public class IPhone extends Mobile{
     public String getDeviceLocation(){
         return "lat:34,log:234";
     }
-
 }
