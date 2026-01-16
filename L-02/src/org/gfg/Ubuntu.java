@@ -18,6 +18,7 @@ public class Ubuntu implements OS {
 
     }
 
+    
     @Override
     public void manageSSD() {
 

@@ -7,6 +7,7 @@ public class Principal {
 
 //private static Principal INSTANCE = new Principal("Rahul",123l);
 
+
     private static Principal INSTANCE;
 
     private Principal(String name, Long empId) {

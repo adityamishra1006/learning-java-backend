@@ -12,6 +12,7 @@ public abstract class TataCar implements IndGovtMotorNorm {
         System.out.println("tataSpecificMethod");
     }
 
+    
     public abstract void startCar();
 
     public abstract void stopCar();

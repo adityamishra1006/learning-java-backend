@@ -6,7 +6,6 @@ public class PremiumBusinessLogic extends BusinessLogic{
     public void useCaseSpecificLogic(){
 
     }
-
 //    @Override
 //    public void coreLogic(){
 //

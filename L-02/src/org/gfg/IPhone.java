@@ -3,12 +3,12 @@ package org.gfg;
 public class IPhone extends Mobile{
     @Override
     public void indiaSpecificFunction() {
-
+        // You can add body to this function
     }
 
     @Override
     public void indiaITDepSpecificFunction() {
-
+        // Add body 
     }
 
     @Override

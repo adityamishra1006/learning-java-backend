@@ -12,6 +12,7 @@ public class StaticDemo {
         System.out.println("Static method");
     }
 
+    // Static
     static
     {
         System.out.println("Executing static block");

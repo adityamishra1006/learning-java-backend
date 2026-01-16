@@ -2,7 +2,6 @@ package org.gfg;
 
 //public class Laptop implements IndGovtNorm, IndiaITDeptNorm {
 public class Laptop implements IndianElectronicDeviceInterface {
-
     private String name;
     private OS os;
 
@@ -10,7 +9,6 @@ public class Laptop implements IndianElectronicDeviceInterface {
         this.name = name;
         this.os = os;
     }
-
     @Override
     public void indiaSpecificFunction() {
 

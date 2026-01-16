@@ -8,6 +8,5 @@ public class SingletonDemo {
         Principal p2 = Principal.getINSTANCE();
 
         System.out.println(p1==p2);
-
     }
 }

@@ -5,8 +5,6 @@ public interface IndiaITDeptNorm {
     static String getDeptName(){
         return "";
     }
-
-
      public abstract void indiaITDepSpecificFunction();
 
     void method1();

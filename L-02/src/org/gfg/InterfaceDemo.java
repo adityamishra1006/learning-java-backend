@@ -3,8 +3,6 @@ package org.gfg;
 import java.util.List;
 
 public class InterfaceDemo {
-
-
     public static void main(String[] args) {
         Windows windows = new Windows();
         Ubuntu ubuntu = new Ubuntu();

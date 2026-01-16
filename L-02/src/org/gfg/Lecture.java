@@ -5,6 +5,7 @@ public class Lecture {
     private String title;
     private LectureStatus status;
 
+    
     public Lecture(String title, LectureStatus status) {
         this.title = title;
         this.status = status;
