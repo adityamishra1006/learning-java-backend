@@ -1,0 +1,10 @@
+2025-09-04T14:51:42.657+05:30  INFO 15204 --- [L09-Logging-MVC-Annotations-demo] [main] .L09LoggingMvcAnnotationsDemoApplication : Starting L09LoggingMvcAnnotationsDemoApplication using Java 21.0.8 with PID 15204 (C:\Users\mishr\Desktop\JDBL-85-Coding-Own\L09-Logging-MVC-Annotations-demo\target\classes started by mishr in C:\Users\mishr\Desktop\JDBL-85-Coding-Own\L09-Logging-MVC-Annotations-demo)
+2025-09-04T14:51:42.660+05:30  INFO 15204 --- [L09-Logging-MVC-Annotations-demo] [main] .L09LoggingMvcAnnotationsDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2025-09-04T14:51:43.229+05:30  INFO 15204 --- [L09-Logging-MVC-Annotations-demo] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-09-04T14:51:43.241+05:30  INFO 15204 --- [L09-Logging-MVC-Annotations-demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-04T14:51:43.241+05:30  INFO 15204 --- [L09-Logging-MVC-Annotations-demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.10]
+2025-09-04T14:51:43.277+05:30  INFO 15204 --- [L09-Logging-MVC-Annotations-demo] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 576 ms
+2025-09-04T14:51:43.631+05:30  INFO 15204 --- [L09-Logging-MVC-Annotations-demo] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-09-04T14:51:43.636+05:30  INFO 15204 --- [L09-Logging-MVC-Annotations-demo] [main] .L09LoggingMvcAnnotationsDemoApplication : Started L09LoggingMvcAnnotationsDemoApplication in 1.384 seconds (process running for 1.93)
+2025-09-04T14:53:12.162+05:30  INFO 15204 --- [L09-Logging-MVC-Annotations-demo] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-04T14:53:12.167+05:30  INFO 15204 --- [L09-Logging-MVC-Annotations-demo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
