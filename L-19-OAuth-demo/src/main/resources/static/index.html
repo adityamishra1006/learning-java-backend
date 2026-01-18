@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>OAuth Login Demo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <base href="/"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+
+    <!-- jQuery -->
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            margin-top: 80px;
+        }
+
+        .user-info span {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LOGIN CARD -->
+    <div class="row justify-content-center unauthenticated">
+        <div class="col-md-6">
+            <div class="card shadow-sm text-center">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">Welcome</h3>
+                    <p class="card-text text-muted">
+                        Login using your GitHub account to continue
+                    </p>
+                    <a href="/oauth2/authorization/github"
+                       class="btn btn-dark btn-lg mt-2">
+                        Login with GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AUTHENTICATED CARD -->
+    <div class="row justify-content-center authenticated" style="display:none;">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">User Details</h4>
+
+                    <p class="user-info">
+                        Logged in as: <span id="user"></span>
+                    </p>
+                    <p class="user-info">
+                        Company: <span id="company"></span>
+                    </p>
+
+                    <button onclick="logout()"
+                            class="btn btn-outline-danger mt-3">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- JS Cookie -->
+<script src="/webjars/js-cookie/js.cookie.js"></script>
+
+<script>
+    $.ajaxSetup({
+        beforeSend: function (xhr, settings) {
+            if (settings.type === 'POST'
+                || settings.type === 'PUT'
+                || settings.type === 'DELETE') {
+
+                if (!(/^http:.*/.test(settings.url)
+                    || /^https:.*/.test(settings.url))) {
+
+                    xhr.setRequestHeader(
+                        "X-XSRF-TOKEN",
+                        Cookies.get('XSRF-TOKEN')
+                    );
+                }
+            }
+        }
+    });
+
+    $.get("/user", function (data) {
+        $("#user").text(data.name);
+        $("#company").text(data.company);
+        $(".unauthenticated").hide();
+        $(".authenticated").show();
+    });
+
+    function logout() {
+        $.post("/logout", function () {
+            $("#user").text('');
+            $("#company").text('');
+            $(".authenticated").hide();
+            $(".unauthenticated").show();
+        });
+        return true;
+    }
+</script>
+
+</body>
+</html>
