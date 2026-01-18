@@ -1,0 +1,18 @@
+package com.example.L12_Spring_JDBC_Demo.dao;
+
+import com.example.L12_Spring_JDBC_Demo.entity.Product;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+@Component
+public class ProductMapper implements RowMapper<Product> {
+
+
+    @Override
+    public Product mapRow(ResultSet resultSet, int rowNum) throws SQLException {
+        return new Product(resultSet.getLong("id"), resultSet.getString("name"), resultSet.getDouble("cost"));
+    }
+}
