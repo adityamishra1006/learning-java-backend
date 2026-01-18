@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="L07-keywordAnalyzerJar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../L07-keywordAnalyzerJar/out/artifacts/L07_keywordAnalyzerJar_jar/L07-keywordAnalyzerJar.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

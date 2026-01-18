@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="L07-keywordAnalyzerJar:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/L07_keywordAnalyzerJar_jar</output-path>
+    <root id="archive" name="L07-keywordAnalyzerJar.jar">
+      <element id="module-output" name="L07-keywordAnalyzerJar" />
+    </root>
+  </artifact>
+</component>
