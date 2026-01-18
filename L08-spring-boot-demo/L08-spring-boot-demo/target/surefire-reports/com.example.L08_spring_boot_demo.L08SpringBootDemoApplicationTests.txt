@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.L08_spring_boot_demo.L08SpringBootDemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.860 s -- in com.example.L08_spring_boot_demo.L08SpringBootDemoApplicationTests
